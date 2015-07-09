@@ -13,12 +13,17 @@ var waypointsString = ""
 function parseWaypoints(element) {
 	var stringArr = element.split(', ')
 	console.log(stringArr)	
-	waypointsString+='|'
+	waypointsString+='|'+stringArr[0]+','+stringArr[1]+','+stringArr[2]
+	console.log('waypointsString' + waypointsString)
 }
 function getGoogleData(waypoints) {
+	//will come in as [NumStreet,City,STATE]
+
 	//create the url with strings
 	waypointsString = waypoints.forEach(parseWaypoints);
+	return waypointsString;
 
 }
 
+module.exprts = getGoogleData
 //html form where you can keep adding routes and then delete them

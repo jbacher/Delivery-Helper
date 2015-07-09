@@ -1,0 +1,11 @@
+{
+  "name": "pizza-app",
+  "version": "1.0.0",
+  "description": "Traveling Salseman problem for pizza delivery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Bacher",
+  "license": "ISC"
+}

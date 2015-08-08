@@ -3,8 +3,11 @@ var parser = require('./models/parser')
 module.exports = function(app) {
 
 	app.get('/',function(req,res){
-		console.log("TESTING")
-		res.send('HELLO WORLD')
+		//res.sendFile("./views/index.html", {root: __dirname})
+
+		//WE MADE IT, YASSSSSSS
+
+		res.sendFile("index.html", {root: __dirname+"/../views/"})
 	}),
 	//get call 
 	app.get('/api/directions', function(req, res) {

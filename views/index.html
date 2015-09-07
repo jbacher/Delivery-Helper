@@ -12,7 +12,30 @@
 	</head>
 	<body>
 		<h1>DOES IT WORK</h1>
-		<div id="container"></div>
-		<script type="text/javascript" src="js/app.js">
+		<div id="container">
+			<div class="text-container">
+				<form id="test">
+				  First name: <input type="text" name="fname"><br>
+				  Last name: <input type="text" name="lname"><br>
+				  Last name: <input type="text" name="lname"><br>
+				  <input type="submit" value="Submit" id="submit">
+				</form>
+			</div>	
+		</div>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		<script>
+		frm.submit(function () {
+		 sendContactForm();
+		 return false;
+		});
+		var frm = $('#test');
+    	frm.submit(function (ev) {
+        	console.log(ev)
+        });
+
+
+        
+		</script>
 	</body>
 </html>

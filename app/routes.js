@@ -1,6 +1,9 @@
 //api key AIzaSyBq08EhP5dAeEFdB78UNVuKmZExkIRAwJI
 var parser = require('./models/parser')
+var express= require('express')
 module.exports = function(app) {
+
+	app.use(express.static('../views/js'));
 
 	app.get('/',function(req,res){
 		//res.sendFile("./views/index.html", {root: __dirname})
